@@ -11,7 +11,21 @@
     - average([1, 1]) // Retorno: 1;
     - average([1, '2']) // Retorno: undefined;
 */
+  /* Source: Uso do typeof : https://developer.mozilla.org/pt-BR/docs/Web/JavaScript/Reference/Operators/typeof */
+  const average = (array) => {
+  let soma = 0;
+  let media = 0;
+  if (array.length === 0) {
+    return undefined;
+  }
+  for (let i = 0; i < array.length; i += 1) {
+    if (typeof array[i] !== 'number') {
+      return undefined;
+    }
+    soma += array[i];
+     media = soma / array.length;
+    }
+    return Math.round(media);
+};
 
-const average = () => {};
-const
 module.exports = average;
