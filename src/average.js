@@ -23,7 +23,7 @@
       return undefined;
     }
     soma += array[i];
-     media = soma / array.length;
+    media = soma / array.length;
     }
     return Math.round(media);
 };
