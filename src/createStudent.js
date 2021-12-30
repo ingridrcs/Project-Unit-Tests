@@ -14,7 +14,8 @@
     estudante.name // Retorna: 'Leandrão, o Lobo Solitário'
     estudante.feedback() // Retorna: 'Eita pessoa boa!'
 */
+// Source: https://jestjs.io/pt-BR/docs/expect e https://www.w3schools.com/js/js_objects.asp
 
-const createStudent = () => {};
+const createStudent = (nome) => ({ name: nome, feedback: () => 'Eita pessoa boa!' });
 
 module.exports = createStudent;
